@@ -136,6 +136,13 @@ img.tela-inicial{
     
 }
 
+.icon{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    margin: 10px 0;
+}
+
 .cards{
     width: 270px;
     height: 260px;
@@ -179,27 +186,74 @@ h2#titulo-objetivos{
 .objetivos{
     position: relative;
     top: 10vw;
-    width: 50%;
+    width: 35%;
 }
 
 
 #circles{
-    width: 300px;
-    height: 300px;
-    background-color: #1e1f20;
-    border-radius: 100%;
+    width: 445px;
+    height: 445px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
 }
 
 #circles::before{
+    content: '';
+    display: block;
+    background-color: #D9D9D9;
+    border-radius: 50%;
     position: relative;
-    left: 60%;
-    width: 300px;
-    height: 300px;
-    background-color: #3e5570;
-    border-radius: 100%;
+    bottom: 15px;
+    left: 50vh;
+    width: 222px;
+    height: 222px;
+    
+}
+#circles::after{
+    content: '';
+    display: block;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    position: relative;
+    left: 50vh;
+    top: 15px;
+    width: 222px;
+    height: 222px;
+    
 }
 
 
 #sobre-text{
     font-size: 1.75em;
+}
+
+
+h2#titulo-funcionamento{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #FF1654;
+    position: relative;
+    top: 150vh;
+}
+
+
+div#container-funcionalidade{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 300px;
+    top: 160vh
+
+}
+
+
+#triangulo-func{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 114px 150px 114px;
+    border-color: transparent transparent #FF1654 transparent;
+    transform: rotate(65deg);
 }
