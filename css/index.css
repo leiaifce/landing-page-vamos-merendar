@@ -35,10 +35,12 @@ header{
     font-size: 1em;
     color: var(--cor-primaria);
     font-weight: 600;
+
 }
 
 .imagem-leia{
     height: 7vh;
+    margin-right: 10px;
 }
 .nav-list{
     z-index: 30;    
@@ -116,10 +118,88 @@ section#inicio-pagina{
 img.tela-inicial{
     animation: aparecer-celular 1s ease-in-out;
     width: 20vw;
-    
     position: absolute;
     z-index: 40;
     top: 10%;
     right: 25vw;
     z-index: 50;
+}
+
+
+
+#container-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 300px;
+    position: relative;
+    top: 60vh;
+    
+}
+
+.cards{
+    width: 270px;
+    height: 260px;
+    background: #F3F3F3;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+.cards h2{
+    color: #FF1654;
+    text-align: center;
+    font-size: 1.750em;
+}
+.cards p{
+    text-align: justify;
+    padding: 0 20px;
+    font-size: 1.250em;      
+}
+
+
+h2#titulo-objetivos{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #FF1654;
+    position: relative;
+    top: 90vh;
+}
+
+#objetivos-app{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 300px;
+    top: 90vh
+}
+
+.objetivos{
+    position: relative;
+    top: 10vw;
+    width: 50%;
+}
+
+
+#circles{
+    width: 300px;
+    height: 300px;
+    background-color: #1e1f20;
+    border-radius: 100%;
+}
+
+#circles::before{
+    position: relative;
+    left: 60%;
+    width: 300px;
+    height: 300px;
+    background-color: #3e5570;
+    border-radius: 100%;
+}
+
+
+#sobre-text{
+    font-size: 1.75em;
 }
