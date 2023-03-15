@@ -25,6 +25,37 @@ header{
     
 }
 
+.nav-list a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.nav-list a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;   /*para deixar embaixo*/
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;   /*(COMEÇA)em vez de se originar do centro a linha vai se originar da direita*/
+    transform: scaleX(0);  /*não aparece pq ta na escala X*/
+    transition: transform .5s;
+}
+
+.nav-list a:hover::after{
+    transform-origin: left; /*(TERMINA)*/
+    transform: scaleX(1);  /*aparece quando passa por cima*/
+
+
+
+}
+
 .logo-leia{
     display: flex;
     justify-content: space-evenly;

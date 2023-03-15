@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vamos merendar?</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+
+
+    
+
 
 </head>
 <body>
@@ -66,7 +75,7 @@
         </div>
 
         
-        <h2 id="titulo-objetivos">Objetivos do aplicativo</h2>
+        <h2 id="titulo-objetivos" data-aos="fade-down">Objetivos do aplicativo</h2>
 
         <div id="objetivos-app">
             <div class="objetivos" id="circles">
@@ -78,7 +87,7 @@
         </div>
 
         
-        <h2 id="titulo-funcionamento">Funcionamento</h2>
+        <h2 id="titulo-funcionamento" data-aos="fade-right">Funcionamento</h2>
 
 
 
@@ -90,16 +99,16 @@
         <div id="container-funcionalidade">
             <div class="funcionalidade" id="triangulo-func"></div>
 
-            <div class="funcionalidade" id="linhas">
-                <div class="containerQuadrado">
+            <div class="funcionalidade" id="linhas" >
+                <div class="containerQuadrado" data-aos="fade-right">
                     <div class="text">1</div>
                     <div class="quadrado"></div>
                 </div>
-                <div class="containerQuadrado">
+                <div class="containerQuadrado" data-aos="fade-left">
                     <div class="text">2</div>
                     <div class="quadrado"></div>
                 </div>
-                <div class="containerQuadrado">
+                <div class="containerQuadrado" data-aos="fade-right">
                     <div class="text">3</div>
                     <div class="quadrado"></div>
                 </div>
@@ -111,12 +120,12 @@
 
 
         <section>
-            <h2 id="titulo-sobre">Sobre</h2>
-            <div id="sobre-fundo"></div>
+            <h2 id="titulo-sobre" data-aos="fade-down">Sobre</h2>
+            <div id="sobre-fundo" data-aos="fade-right"></div>
 
-            <div id="sobre-text-sobre"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum culpa obcaecati velit ullam modi. Ex consectetur autem impedit architecto, sequi nostrum eligendi maxime dolore nihil, voluptatum inventore id vel ipsum.</p></div>
+            <div id="sobre-text-sobre" data-aos="fade-right"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum culpa obcaecati velit ullam modi. Ex consectetur autem impedit architecto, sequi nostrum eligendi maxime dolore nihil, voluptatum inventore id vel ipsum.</p></div>
 
-            <div id="img-mao">
+            <div id="img-mao" data-aos="fade-left">
                 <img src="assets/images/app-mão.png" alt="">
             </div>
         </section>
@@ -125,7 +134,7 @@
 
 
     <footer>
-        <div id="info">
+        <div id="info" data-aos="fade-up">
             <div class="footer" id="info-text">
                 <p> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
             </div>
@@ -137,6 +146,11 @@
         <p id="p-footer">Powered by LEIA  IFCE  Maranguape</p>
     </footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>
