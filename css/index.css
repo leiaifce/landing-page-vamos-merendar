@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 10px 0;
     min-height: 100vh;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+
     overflow-x: hidden;
 }
 
@@ -97,8 +103,19 @@ header{
     font-weight: bold;
 }
 
+section{
+    min-height: 100vh;
+}
+
+section:not(:nth-child(1)){ /*Todas as sections menos a primeira*/
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section#inicio-pagina{
-    position: relative;
+
     min-height: 70vh;
 }
 
@@ -142,7 +159,7 @@ section#inicio-pagina{
     border-radius: 40px;
 
     position: absolute;
-    top: -25%;
+    top: -10%;
     left: 47vw;
     transform: rotate(45deg);
     z-index: 0;
@@ -168,7 +185,7 @@ img.tela-inicial{
     display: flex;
     justify-content: space-evenly;
     margin-top: 30vh;    
-    position: relative;
+    
 
     width: 100vw;
 }
@@ -187,12 +204,15 @@ img.tela-inicial{
 }
 
 .cards{
-    width: 270px;
-    height: 260px;
+    width: 20vw;
+    height: 15VW;
     background: #F3F3F3;
     border-radius: 20px;
-    padding: 10px;
+    padding: 1em .5em;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
 }
 
@@ -204,89 +224,29 @@ img.tela-inicial{
 .cards p{
     text-align: justify;
     padding: 0 20px;
-    font-size: 1.250em;      
+    font-size: 1.2em;      
 }
+
 
 
 .titulo-topico{
-    display: flex;
+
     justify-content: center;
     font-size: 2em;
     font-weight: 700;
-    color: #FF1654;
-    position: relative;
-    top: 90vh;
-}
-
-#objetivos-app{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: 0 300px;
-    top: 90vh
-}
-
-.objetivos{
-    position: relative;
-    top: 10vw;
-    width: 35%;
-}
-
-
-#circles{
-    width: 445px;
-    height: 445px;
-    background-color: #D9D9D9;
-    border-radius: 50%;
-}
-
-#circles::before{
-    content: '';
-    display: block;
-    background-color: #D9D9D9;
-    border-radius: 50%;
-    position: relative;
-    bottom: 15px;
-    left: 50vh;
-    width: 222px;
-    height: 222px;
+    color: var(--cor-primaria);
     
-}
-#circles::after{
-    content: '';
-    display: block;
-    background-color: #D9D9D9;
-    border-radius: 50%;
-    position: relative;
-    left: 50vh;
-    top: 15px;
-    width: 222px;
-    height: 222px;
     
 }
 
 
-#sobre-text{
-    font-size: 1.75em;
-}
 
 
-h2#titulo-funcionamento{
-    display: flex;
-    justify-content: center;
-    font-size: 3em;
-    font-weight: 700;
-    color: #FF1654;
-    position: relative;
-    top: 150vh;
-}
-
-
-div#container-funcionalidade{
+section#container-funcionalidade{
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 0 300px;
+    margin: 0 20vw;
     top: 160vh
 
 }
@@ -299,7 +259,7 @@ div#container-funcionalidade{
     height: 0;
     border-style: solid;
     border-width: 0 114px 150px 114px;
-    border-color: transparent transparent #FF1654 transparent;
+    border-color: transparent transparent var(--cor-primaria) transparent;
     transform: rotate(65deg);
 }
 
@@ -326,14 +286,12 @@ div#container-funcionalidade{
 
 
 .containerQuadrado .text{
-    color: #FF1654;
+    color: var(--cor-primaria);
     font-weight: 700;
     font-size: 35px;
 }
 
-.abstrato-func{
-     
-}
+
 
 
 
@@ -342,7 +300,7 @@ div#container-funcionalidade{
     justify-content: center;
     font-size: 3em;
     font-weight: 700;
-    color: #FF1654;
+    color: var(--cor-primaria);
     position: relative;
     top: 210vh;
 }
@@ -353,7 +311,7 @@ div#container-funcionalidade{
     height: 750px;
     font-weight: 700;
     border-radius: 80px;
-    background: #d21144;
+    background: var(--cor-primaria);
     position: relative;
     top: 218vh;
     left: 0;
@@ -378,7 +336,7 @@ div#container-funcionalidade{
     justify-content: center;
     font-size: 3em;
     font-weight: 700;
-    color: #FF1654;
+    color: var(--cor-primaria);
     position: relative;
     top: 85vh;
     left: 15vw;
@@ -390,7 +348,7 @@ footer{
     height: 300px;
     position: relative;
     top: 140vh;
-    background-color: #d21144;
+    background-color: var(--cor-primaria);
     border-radius: 20px 80px 0px 0px;
     margin: 0px;
     padding: 50px;
