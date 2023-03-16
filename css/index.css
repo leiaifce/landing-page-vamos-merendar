@@ -28,9 +28,36 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    z-index: 100;
     
 }
+
+@keyframes abrirNavbarTopo {
+    0%{
+        top: -5%;
+        opacity: 0;
+    }
+
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.navbar.ativo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor-primaria);
+    animation: abrirNavbarTopo .5s ease-out;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 0;
+}
+
+.navbar.ativo #titulo-leia{
+    color: var(--cor-de-fundo);
+}
+
 
 .nav-list{
     width: 50vw;
