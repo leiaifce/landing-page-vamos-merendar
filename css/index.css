@@ -5,8 +5,9 @@ html{
 }
 
 body{
-    margin: 10px 0;
+    
     min-height: 100vh;
+    width: 100vw;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 
@@ -47,6 +48,7 @@ header{
 .navbar.ativo{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: var(--cor-primaria);
     animation: abrirNavbarTopo .5s ease-out;
@@ -135,7 +137,7 @@ section{
 }
 
 section:not(:nth-child(1)){ /*Todas as sections menos a primeira*/
-    margin-top: 15vh;
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +167,7 @@ section#inicio-pagina{
     position: absolute;
     top: 40%;
     margin-left: 15vw;
-    z-index: 50;
+    z-index: 0;
 }
 
 #texto-titulo{
@@ -192,9 +194,6 @@ section#inicio-pagina{
     z-index: 0;
 }
 
-.celular{
-    
-}
 
 img.tela-inicial{
     animation: aparecer-celular 1s ease-in-out;
@@ -415,3 +414,70 @@ footer{
 }
 
 
+.navbar-mobile{
+    display: none;
+}
+@media (max-width:768px) {
+    html{
+        overflow-x: hidden;
+    }
+    .navbar{
+        display: none;
+    }
+    
+   
+
+    .navbar-mobile{
+        position: fixed;
+        height: 12vh;
+        top: 50%;
+        background-color: var(--cor-escura);
+    }
+    .mobile-nav-list{
+        list-style-type: none;
+        display: flex;
+        
+    }
+
+    section#inicio-pagina{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .celular{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    
+    img.tela-inicial{
+        width: 50vw;
+        position: relative;
+        margin: 0;
+        transform: translateX(50%);
+    }
+    #conteudo-inicial{
+        position: relative;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #conteudo-inicial p{
+        width: 90vw;
+    }
+
+    .quadrado-fundo{
+        left: 100%;
+        top: -50%;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+
+
+}
