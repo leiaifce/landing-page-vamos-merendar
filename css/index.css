@@ -134,7 +134,10 @@ header{
 
 section{
     min-height: 100vh;
+    width: 100vw;
+    
 }
+
 
 section:not(:nth-child(1)){ /*Todas as sections menos a primeira*/
     margin-top: 20vh;
@@ -144,7 +147,7 @@ section:not(:nth-child(1)){ /*Todas as sections menos a primeira*/
 }
 
 section#inicio-pagina{
-
+    position: relative;
     min-height: 70vh;
 }
 
@@ -304,7 +307,7 @@ section#container-funcionalidade{
     margin: 0px 0px 70px 0px;
     padding: 10px;
     border-radius: 20px;
-    width: 350px;
+    width: 30vw;
     height: 100px;
     background-color: #D9D9D9;
 }
@@ -460,14 +463,18 @@ footer{
     }
     #conteudo-inicial{
         position: relative;
+        margin: 0;
         width: 100vw;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
     }
 
     #conteudo-inicial p{
         width: 90vw;
+        font-size: .7em;
+        text-align: justify;
     }
 
     .quadrado-fundo{
