@@ -1,176 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vamos merendar?</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Vamos Merendar</title>
+    <link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 
 </head>
-
 <body>
-    <script src="./js/index.js" defer></script>
     <header>
-
-
-        <nav class="navbar">
-            <div class="logo-leia">
-                <img src="./assets/images/leia.gif" class="imagem-leia" alt="Logo do leia ifce maranguape">
-                <h3 id="titulo-leia">LEIA IFCE Maranguape</h3>
+        <h1>Ratos LEIA</h1>
+        <div class="menu-section">
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
             </div>
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="#topico-a-ideia" class="nav-link">A idéia</a></li>
-                <li class="nav-list-item"><a href="#topico-modulos  " class="nav-link">Módulos</a></li>
-                <li class="nav-list-item"><a href="#topico-planos" class="nav-link">Planos</a></li>
-                <li class="nav-list-item"><a href="#topico-quem-somos" class="nav-link">Quem somos</a></li>
-            </ul>
-        </nav>
-        <nav class="navbar-mobile">
-            <ul class="mobile-nav-list">
-                <li class="-mobile-nav-list-item"><a href="#topico-a-ideia" class="nav-link">A idéia</a></li>
-                <li class="-mobile-nav-list-item"><a href="#topico-modulos  " class="nav-link">Módulos</a></li>
-                <li class="-mobile-nav-list-item"><a href="#topico-planos" class="nav-link">Planos</a></li>
-                <li class="-mobile-nav-list-item"><a href="#topico-quem-somos" class="nav-link">Quem somos</a></li>
-            </ul>
-        </nav>
+            
+            <nav>
+                <li><a href="#modulos-link">DIFERENCIAIS</a></li>
+                <li><a href="#titulo-ideia">A IDEIA</a></li>
+                <li><a href="#titulo-plano">PLANOS</a></li>
+                <li><a href="#sobre">QUEM SOMOS?</a></li>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="inicio-pagina">
-            <div id="conteudo-inicial">
-                <h1 id="texto-titulo">Vamos merendar?</h1>
-                <p>A alimentação escolar é algo de extrema importância para os alunos da rede pública de ensino.
-                    Milhões de crianças e adolescentes se alimentam gratuitamente todos os dias. Nosso aplicativo visa ajudar na administração dessa alimentação para evitar desperdicios e falta de alimentos para os alunos</p>
-            </div>
 
-            <div class="celular">
-                <img src="./assets/images/tela-inicial.png" alt="Foto da tela inicial do aplicativo vamos merendar"
-                    class="tela-inicial">
-            </div>
-
-            <div class="quadrado-fundo"></div>
-        </section>
-
-
-
-        <div id="container-cards">
-            <div class="cards" id="card1" data-aos="fade-right">
-                <div class="icon">
-                    <span class="material-icons">mood</span>
-                </div>
-                <h3 class="titulo-card">Fácil de Usar</h3>
-                <p> Fácil utilização, simples, intuitivo e rápido. </p>
-            </div>
-            <div class="cards" id="card1" data-aos="fade-up">
-                <div class="icon">
-                    <span class="material-icons">bolt</span>
-                </div>
-                <h3 class="titulo-card">Performático</h3>
-                <p> Aplicativo totalmente responsivo. </p>
-            </div>
-            <div class="cards" id="card1" data-aos="fade-left">
-                <div class="icon">
-                    <span class="material-icons">stacked_line_chart</span>
-                </div>
-                <h3 class="titulo-card">Escalável</h3>
-                <p>Personalização para empresas de larga escala que forneçam alimentação coletiva. </p>
-            </div>
+    <div id="divisao"></div>
+    <div id="tela-inicial" >
+        <div id="texto-inicial">
+            <h1>VAMOS MERENDAR?</h1>
+            <p>A alimentação escolar é algo de extrema importância para os alunos da rede pública de ensino. Milhões de crianças e adolescentes se alimentam gratuitamente todos os dias. Nosso aplicativo visa ajudar na administração dessa alimentação para evitar desperdicios e falta de alimentos para os alunos</p>
         </div>
-
-
-
-        <section id="topico-a-ideia">
-            <h2 data-aos="fade-down" class="titulo-topico">A ideia</h2>
-            <div id="conteudo-a-ideia">
-                <div id="objetivos-imagens-container" data-aos="fade-right">
-                    <div id="imagens-coluna1">
-                    </div>
-                    <div id="imagens-coluna2">
-                    </div>
-                </div>
-                <div data-aos="fade-left">
-                    <p> O objetivo do aplicativo vamos merendar é o fornecimento de uma solução inovadora mobile de gestão
-                        de refeições coletivas, principalmente em escolas da rede pública de ensino, com foco em mitigar o
-                        desperdício e a falta de refeição. </p>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <section  id="topico-modulos">
-            <h2 class="titulo-topico" data-aos="fade-right">Módulos</h2>
-            <div class="funcionalidade" id="triangulo-func" data-aos="zoom-in"></div>
-
-            <div class="funcionalidade" id="linhas">
-                <div class="containerQuadrado" data-aos="fade-right">
-                    <div class="text">1</div>
-                    <div class="quadrado"></div>
-                </div>
-                <div class="containerQuadrado" data-aos="fade-left">
-                    <div class="text">2</div>
-                    <div class="quadrado"></div>
-                </div>
-                <div class="containerQuadrado" data-aos="fade-right">
-                    <div class="text">3</div>
-                    <div class="quadrado"></div>
-                </div>
-
-            </div>
-
-            <div class="funcionalidade" id="abstrato-func"></div>
-        </section>
-
-
-        <section id="topico-planos">
-            <h2 class="titulo-topico" data-aos="fade-down">Planos</h2>
-            <div id="sobre-fundo" data-aos="fade-right"></div>
-
-            <div data-aos="fade-right">
-                <p>Planos planos planos.</p>
-            </div>
-
-            <div id="img-mao" data-aos="fade-left">
-                <img src="assets/images/app-mão.png" alt="">
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer id="topico-quem-somos">
-        <div id="info">
-            <div class="footer" id="info-text" data-aos="fade-up">
-                <p> LEIA é o Laboratório de Eletrônica e Informática Aplicada no IFCE - Campus Maranguape que já nasceu
-                    com frutos significativos sendo colhidos dentre os estudantes dos cursos técnicos. O LEIA acolhe
-                    projetos e ações que têm sido empreendidos pelos servidores deste campus, os quais tem ampliado,
-                    sobremaneira, as possibilidades de atendimento à sociedade e aos discentes, público-alvo do IFCE,
-                    com atividades diversas de ensino, pesquisa e extensão. </p>
-            </div>
-            <div class="footer" id="info-redes" data-aos="fade-up">
-                <p><ion-icon name="logo-instagram" class="logo-ig"></ion-icon> @leia.ifce</p>
-                <p><ion-icon name="mail-outline"></ion-icon> leia@maranguape.ifce.edu.br</p>
-            </div>
+        <div id="img-inicial">
+            <div id="quadrado-inicial"></div>
+            <img src="img/tela-inicial.png" alt="">
         </div>
-        <p id="p-footer">Powered by LEIA IFCE Maranguape</p>
+    </div>
+
+
+
+    <h1 class="titulos modulo" data-aos="fade-down" id="modulos-link">Diferenciais</h1>
+    <div id="card">
+        <div class="cards"  data-aos="fade-up">
+            <h2>Fácil de Usar</h2>
+            <p>Fácil utilização, simples, intuitivo e rápido.</p>
+        </div>
+        <div class="cards"  data-aos="fade-up">
+            <h2>Escalável</h2>
+            <p>Personalização para empresas de larga escala que forneçam alimentação coletiva.</p>
+        </div>
+        <div class="cards"  data-aos="fade-up">
+            <h2>Performático</h2>
+            <p>Aplicativo totalmente responsivo.</p>
+        </div>
+        
+    </div>
+
+    <div id="back-ideias">
+        <h1 class="titulos" id="titulo-ideia" data-aos="fade-down">A ideia</h1>
+        <div id="ideia">
+            <img data-aos="fade-up" src="img/logo-copy.png" alt="">
+            <p data-aos="fade-up">O objetivo do aplicativo vamos merendar é o fornecimento de uma solução inovadora mobile de gestão de refeições coletivas, principalmente em escolas da rede pública de ensino, com foco em mitigar o desperdício e a falta de refeição.</p>
+        </div>
+    </div>
+
+
+    <h1 class="titulos" data-aos="fade-down">Módulos</h1>
+    <div id="card-diferenciais">
+        <div class="cards-diferenciais" id="card-dif-1" data-aos="fade-right">
+            <h2>1</h2>
+            <p>Nutricionista</p>
+        </div>
+        <div class="cards-diferenciais" data-aos="fade-right">
+            <h2>2</h2>
+            <p>Professor</p>
+        </div>
+        <div class="cards-diferenciais" data-aos="fade-right">
+            <h2>3</h2>
+            <p>Aluno</p>
+        </div>
+    </div>
+
+    <h1 class="titulos" data-aos="fade-down" id="titulo-plano">Melhor Para Você</h1>
+    <div id="plano">
+        <div class="planos" data-aos="fade-up">
+            <h2>Mensal</h2>
+            <ul>
+                <li>Recursos Limitados</li>
+                <li>Três Módulos</li>
+                <li>Não Personalizado</li>
+            </ul>
+        </div>
+        <div class="planos" data-aos="fade-up">
+            <h2>Anual</h2>
+            <ul>
+                <li>Recursos Ilimitados</li>
+                <li>Desconto</li>
+                <li>Não Personalizado</li>
+            </ul>
+        </div>
+        <div class="planos" data-aos="fade-up">
+            <h2>Personalizado</h2>
+            <ul>
+                <li>Recursos Ilimitados</li>
+                <li>Desconto</li>
+                <li>Personalizado</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <h1 class="titulos" data-aos="fade-right">Quem é LEIA?</h1>
+    <div id="sobre" data-aos="fade-up">
+        <p>LEIA é o Laboratório de Eletrônica e Informática Aplicada no IFCE - Campus Maranguape que já nasceu com frutos significativos sendo colhidos dentre os estudantes dos cursos técnicos. O LEIA acolhe projetos e ações que têm sido empreendidos pelos servidores deste campus, os quais tem ampliado, sobremaneira, as possibilidades de atendimento à sociedade e aos discentes, público-alvo do IFCE, com atividades diversas de ensino, pesquisa e extensão.</p>
+    </div>
+
+
+
+    <footer>
+        <div class="footer">
+            <p><a style="color: white;" href="planoNegocios/plano.html">Plano de Negócios</a></p>
+            <p>@leia.ifce <br> leia@maranguape.ifce.edu.br</p>
+        </div>
+        <p>Powered by LEIA  IFCE  Maranguape</p>
     </footer>
 
 
+    <script src="js/menu.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
 
 </body>
-
 </html>
